@@ -14,6 +14,18 @@
 .colorA{
   color: #f5c527 !important;
 }
+.colorbgA{
+  background-color: #f5c527 !important;
+}
+.colorbgC {
+  background-color: #9e6327 !important;
+}
+.colorbgR{
+  background-color: #ea5191 !important;
+}
+.colorbgL{
+  background-color: #fdebab !important;
+}
 
 .sidebar[data-color="local"]:after,
 body>.navbar-collapse[data-color="azure"]:after {
