@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7F4CA69E-D7DF-0B8E-203E-E991DD1E2BBE" name="detalle_boleta">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 17:06:07 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<ordsAlias>table_19</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_detalle" id="6CD99229-CC43-4605-A3FF-17C3C48A2878">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 17:06:56 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_producto_p" id="B2621EF2-BE78-B35A-2EB2-64D5D0AC97DA">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 21:12:31 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DE8EE528-7E91-239C-9881-596C3614B2F1" referredColumn="6F479BC4-6299-BAE0-169F-01E53A43B4B6"/>
+</associations>
+</Column>
+<Column name="id_boleta" id="763E3991-3B7F-3F7A-939D-5C5C616BA814">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 17:07:52 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FCE4B3D2-49F1-77FE-D18A-7D901B57405C" referredColumn="BF87523E-EF75-3A52-C03B-37E48379C5CC"/>
+</associations>
+</Column>
+<Column name="cant" id="27B58D19-E920-DCE7-28BE-B7C3014A75F2">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 17:06:56 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="total" id="943EC9CB-1B82-EDA0-60F5-BB6A32E6F4C0">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 17:06:56 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="35C1A61C-C214-FDD4-219F-3D7B9310A1C8" name="detalle_boleta_PK">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 17:06:56 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6CD99229-CC43-4605-A3FF-17C3C48A2878"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7D370F6F-7766-AF7D-6E00-26913BC6C0EB" name="debo_bole_FK">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 17:07:52 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="763E3991-3B7F-3F7A-939D-5C5C616BA814"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7D210F9D-8DD6-C479-271A-3BDCE7334B91" name="debo_producto_precio_FK">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 21:12:31 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B2621EF2-BE78-B35A-2EB2-64D5D0AC97DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

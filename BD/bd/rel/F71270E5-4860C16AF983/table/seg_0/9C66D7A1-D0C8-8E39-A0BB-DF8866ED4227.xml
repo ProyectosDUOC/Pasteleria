@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9C66D7A1-D0C8-8E39-A0BB-DF8866ED4227" name="pedido_online">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 18:08:50 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<ordsAlias>table_24</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_pedido_online" id="51B51CB7-84AC-26FE-F9AD-1D936E3E6813">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 18:10:00 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="glosa" id="08D585D6-145C-9970-2C1C-16CA35C07BDD">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 18:10:00 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_cliente" id="6187D578-627C-EC34-2363-8161C2952682">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 19:33:43 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7D2D7B0A-A074-0A2D-ADB9-7A5B6E92A22D" referredColumn="BDA9E63E-93FF-7DE9-F196-BDF938B47E2F"/>
+</associations>
+</Column>
+<Column name="id_forma_envio" id="C8A827A7-BDA0-7A3F-835A-7A8F32C1B3C6">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 21:37:25 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6395CF94-985F-83AB-CB0A-8F001D0EB0B5" referredColumn="7E2CF20F-9E27-17A7-354A-B027D864DCAE"/>
+</associations>
+</Column>
+<Column name="id_forma_pago" id="3A3DB314-37D7-2CFC-1CDD-E5E124ACB8EA">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 21:37:37 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="01B0BA67-13BB-005D-6B2E-E6F2BFCF4CA2" referredColumn="F35CC93E-8B71-D027-4A03-453CC134DACC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="14ED6314-B52D-5D66-7A04-73C4D8F40D93" name="pedido_online_PK">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 18:10:00 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="51B51CB7-84AC-26FE-F9AD-1D936E3E6813"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F3CF6198-B062-D79A-A7C2-8600B8D41B7E" name="pelo_cliente_FKv2">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 19:33:43 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6187D578-627C-EC34-2363-8161C2952682"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F5E9FB00-0223-718F-C64D-AF106354388F" name="pedido_forma_FK">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 21:37:25 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C8A827A7-BDA0-7A3F-835A-7A8F32C1B3C6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="22830BEB-437F-02B3-103D-1C2C322E5ABF" name="peon_forma_FK">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 21:37:37 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3A3DB314-37D7-2CFC-1CDD-E5E124ACB8EA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

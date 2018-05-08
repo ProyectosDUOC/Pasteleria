@@ -1,0 +1,167 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8F3D729E-6268-9CD1-D55B-B9CF03BEADE4" name="direccion_cliente">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 16:43:08 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<ordsAlias>table_14</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_direccion" id="988A3456-22BD-F928-3DF2-B1F04DB740C9">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 16:46:00 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_cliente" id="2736DF12-92DF-53C2-E686-85D049734925">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 16:54:09 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F818B960-4216-6812-6F20-802D11FC0328" referredColumn="BDA9E63E-93FF-7DE9-F196-BDF938B47E2F"/>
+</associations>
+</Column>
+<Column name="nombres" id="D7B65F13-7C50-4736-F171-03C2C13C34F8">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 16:46:00 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apellidos" id="8A3D090B-3957-D183-7049-E4FB060A5709">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 16:46:00 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="informacion" id="877C6A16-B5B2-EE62-E7D8-B370B1388E5C">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 17:24:54 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="zip" id="D82C7397-6BBC-39DC-AD0C-602A276BC0EF">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 16:46:00 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_comuna" id="F028FDE8-20B8-27F5-B2FB-022EC7E82476">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 20:10:32 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="28D1F9B2-7F78-2808-3EED-FD038113B277" referredColumn="E41039B1-BAD4-C332-017F-94AE651568B4"/>
+</associations>
+</Column>
+<Column name="direccion" id="0FF42ED6-B235-5553-42D1-D63CE657F31B">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 16:46:00 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono" id="0F6DA36C-9D3C-1319-DA5C-89C1C6859F99">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 16:53:48 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="celular" id="9FD8820C-DB40-4BF3-CD6E-36E22E638448">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 16:53:48 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0BF2AB25-68A4-294A-49C6-045C79B9EAF6" name="direccion_cliente_PK">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 16:46:00 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="988A3456-22BD-F928-3DF2-B1F04DB740C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5FCA90FB-75CA-CD3D-76A7-551556C7261F" name="dire_clie_FK">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 16:54:09 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2736DF12-92DF-53C2-E686-85D049734925"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B4B69277-4DEC-3490-DE70-84978EEC2E3C" name="direccion_cliente_comuna_FK">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 20:10:32 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F028FDE8-20B8-27F5-B2FB-022EC7E82476"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AEA5E72D-8EDF-1310-948E-BBE170ED6278" name="producto_precio">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 16:50:43 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<ordsAlias>table_18</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_producto_p" id="6F479BC4-6299-BAE0-169F-01E53A43B4B6">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 16:51:33 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_producto" id="10B161F5-8421-2FBF-445B-C5192395BABA">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 16:51:38 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="70A8B108-7673-FA6E-BA19-2E2816C42B20" referredColumn="AC6E8883-D467-4453-BE2D-F00900A72FA5"/>
+</associations>
+</Column>
+<Column name="descripcion" id="659C1A94-3939-2177-944D-39E79318C890">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 16:51:33 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="precio" id="9958171D-BA87-3484-6608-5EAB7550D826">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 16:51:33 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="950C80BD-EA8B-2E9B-15C4-C5F2590F8004" name="producto_precio_PK">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 16:51:33 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6F479BC4-6299-BAE0-169F-01E53A43B4B6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="741F4574-1427-FE0A-BF58-55593DB4EEC9" name="prod_prec_prod_FK">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 16:51:38 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="10B161F5-8421-2FBF-445B-C5192395BABA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

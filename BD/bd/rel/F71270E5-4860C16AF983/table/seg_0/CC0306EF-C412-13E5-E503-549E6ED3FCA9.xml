@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CC0306EF-C412-13E5-E503-549E6ED3FCA9" name="comuna">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 15:51:00 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_comuna" id="E41039B1-BAD4-C332-017F-94AE651568B4">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 15:55:57 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_comuna" id="C043DFC0-EB72-3BB3-B509-3B8434031489">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 15:55:57 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="23BF4ACC-D2D0-E06D-9874-19CF3B7CD02E" name="comuna_PK">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 15:56:05 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E41039B1-BAD4-C332-017F-94AE651568B4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

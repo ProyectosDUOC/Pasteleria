@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C8F53908-1D5D-546B-BD3A-48A6A8088B96" name="forma_pago">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 21:26:55 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<ordsAlias>table_25</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_forma_pago" id="F35CC93E-8B71-D027-4A03-453CC134DACC">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 21:36:00 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_pago" id="34DFCD34-96B4-EC6B-C63B-321871C5D16D">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 21:36:00 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D3A011FB-30F4-B6B5-01DC-A1D6AFDEEA7B" name="forma_pago_PK">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 21:36:05 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F35CC93E-8B71-D027-4A03-453CC134DACC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5D1F2171-2950-EB0E-ECBE-C5273CDE6EB5" name="empledo">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 15:49:16 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_empleado" id="55D88164-66A8-DE7C-368A-A4A51574F3B3">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 15:49:16 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rut_empleado" id="7B4AE49B-860D-86C3-5EA2-EE45E659FEB6">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 15:49:16 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombres" id="C8AE2FDE-D7CC-E22B-C44E-1A1BDD3949A7">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 15:49:16 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apellidos" id="C508E818-BBF8-99C0-5C26-EBF57E165A33">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 15:49:16 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_nacimiento" id="7AD6970E-FDD2-A7DD-CDAF-ED795718CFAC">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 15:49:16 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono_empleado" id="4D804AE7-C4B3-3798-03E9-760A6EA894FC">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 15:49:16 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_comuna" id="F8D7B30C-0812-9ED2-A3DC-B65161614B34">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 16:55:12 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="25A8AF27-3D32-1774-495F-2BFF3D0012AD" referredColumn="E41039B1-BAD4-C332-017F-94AE651568B4"/>
+</associations>
+</Column>
+<Column name="correo_empleado" id="803AF122-9B67-E732-8E91-4DDBE9501D2B">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 15:49:16 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="activo" id="9BCBF953-E52B-44AD-E7D4-94D76AD868DE">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 15:49:16 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DB297E69-34DF-6279-3264-BBF6101D95CE" name="empledo_PK">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 16:19:32 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="55D88164-66A8-DE7C-368A-A4A51574F3B3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D7C571AC-1A79-31B4-9244-2EB32D4CA488" name="empl_comu_FK">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 16:55:12 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F8D7B30C-0812-9ED2-A3DC-B65161614B34"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

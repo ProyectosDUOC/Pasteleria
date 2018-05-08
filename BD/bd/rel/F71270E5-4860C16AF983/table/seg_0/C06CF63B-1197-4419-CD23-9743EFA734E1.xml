@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C06CF63B-1197-4419-CD23-9743EFA734E1" name="detalle_pedido_local">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 17:31:16 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<ordsAlias>table_19</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_detalle_local" id="AEAD54D5-57AF-C32C-A169-DF0330AC834B">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 17:31:16 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_pedido_local" id="D2596238-4D55-A675-B890-99DB4D8A5B9B">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 18:10:16 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A58C9F71-7F47-04FB-4BB3-42D8978022A6" referredColumn="EE928B68-6B21-8E52-64FC-21D6F80D645D"/>
+</associations>
+</Column>
+<Column name="cant" id="90DAEAD0-7AB5-6232-DAFE-BA0D2A3A32ED">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 17:31:16 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="total" id="EC8085BB-9136-DF9B-F855-1E9DDC4FA4FD">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 17:31:16 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_producto_p" id="DE52A334-5068-BB24-57B9-9EEBC8FB5479">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 21:15:35 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C0099C9F-E6B0-4015-72A3-D23E4564726B" referredColumn="6F479BC4-6299-BAE0-169F-01E53A43B4B6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="46853897-0E38-B21A-5AF6-247A506EF638" name="detalle_pedido_local_PK">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 18:07:48 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AEAD54D5-57AF-C32C-A169-DF0330AC834B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="19B75690-371F-CC9A-61CE-2A37552E1473" name="deta_local_pedi_local_FK">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 18:10:16 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D2596238-4D55-A675-B890-99DB4D8A5B9B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="755B5E9E-19ED-BF75-CB42-9A5A8956E0E8" name="deta_prpr_FK">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 21:15:35 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE52A334-5068-BB24-57B9-9EEBC8FB5479"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,30 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E1B9FF84-CE9A-2935-2312-665241F1AB78" name="sucursal">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 16:08:45 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_sucursal" id="63FA9D78-CE56-6F8D-40F7-AAAAD37CC82B">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 16:09:05 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_sucursal" id="658BAE71-7C62-C8C3-947A-6F6A48A0CE07">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 16:09:05 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

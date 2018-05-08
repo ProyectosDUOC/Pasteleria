@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="812F88A6-F10C-C686-B80C-C318D8004B8B" name="boleta">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 16:05:53 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_boleta" id="BF87523E-EF75-3A52-C03B-37E48379C5CC">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 16:08:29 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="total" id="866E3019-AEF4-496C-ABCB-A4D4CF8C79D7">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 17:07:20 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_empleado" id="7232B47F-CE1D-EEDE-D3A9-68BE603AE016">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 17:34:24 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EFF7C64A-E253-DDCA-E9EE-CEABA997C11C" referredColumn="55D88164-66A8-DE7C-368A-A4A51574F3B3"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C4280757-C4E1-F86E-5E90-109EE6FD5CBE" name="boleta_PK">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 17:07:48 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF87523E-EF75-3A52-C03B-37E48379C5CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="298A4EC6-A224-9D21-3A15-ABBA0AD6DF94" name="bole_emple_FK">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 17:34:24 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7232B47F-CE1D-EEDE-D3A9-68BE603AE016"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

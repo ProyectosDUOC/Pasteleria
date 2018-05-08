@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="22F77720-5860-252A-F84C-1AC14AD40EB5" name="forma_envio">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 21:27:05 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<ordsAlias>table_26</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_forma_envio" id="7E2CF20F-9E27-17A7-354A-B027D864DCAE">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 21:35:14 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_envio" id="3CD428B7-7B63-0316-C49E-DCF7EB75C151">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 21:35:14 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="910DF43E-EF67-E769-8933-0C9FCE27B512" name="forma_envio_PK">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 21:35:19 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E2CF20F-9E27-17A7-354A-B027D864DCAE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
