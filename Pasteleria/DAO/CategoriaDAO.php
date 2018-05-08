@@ -39,5 +39,5 @@
                           ;
         return BD::getInstance()->sqlEjecutar($stSql);
    }
-
+    }
 ?>
