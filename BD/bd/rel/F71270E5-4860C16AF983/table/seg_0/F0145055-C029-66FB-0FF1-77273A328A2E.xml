@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F0145055-C029-66FB-0FF1-77273A328A2E" name="detalle_pedido_online">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F0145055-C029-66FB-0FF1-77273A328A2E" name="detalle_compra_online">
 <createdBy>benja</createdBy>
 <createdTime>2018-05-08 17:35:14 UTC</createdTime>
 <ownerDesignName>bd</ownerDesignName>
@@ -18,9 +18,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="id_pedido_online" id="F96D4B7F-835C-55E0-4827-E3C5FDE29296">
+<Column name="id_compra_online" id="6D147D76-DA61-2BEA-88FB-4B3AB13E7B9B">
 <createdBy>benja</createdBy>
-<createdTime>2018-05-08 18:11:02 UTC</createdTime>
+<createdTime>2018-05-10 18:12:12 UTC</createdTime>
 <ownerDesignName>bd</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -29,7 +29,7 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="9BC4D415-4144-183A-88E0-E9235C7A6699" referredColumn="51B51CB7-84AC-26FE-F9AD-1D936E3E6813"/>
+<colAssociation fkAssociation="047FD2BE-2FDE-D4B0-27B9-D919814375C6" referredColumn="51B51CB7-84AC-26FE-F9AD-1D936E3E6813"/>
 </associations>
 </Column>
 <Column name="id_producto_p" id="CBED67C6-516E-ECA7-B0F2-586A29BA5261">
@@ -45,6 +45,17 @@
 <associations>
 <colAssociation fkAssociation="AE9E111C-D9D6-2AB0-66A7-D182C122CD61" referredColumn="6F479BC4-6299-BAE0-169F-01E53A43B4B6"/>
 </associations>
+</Column>
+<Column name="precio" id="60F6A401-D892-6B7B-E8BA-7C5FD914CD97">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-10 20:22:23 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="cant" id="308C9259-59ED-FF28-0A42-6A41022CFDA5">
 <createdBy>benja</createdBy>
@@ -70,25 +81,15 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="D182D75B-EDA9-4307-8162-96F90C08F2DF" name="detalle_reservav1_PK">
+<ind_PK_UK id="A02E61FF-4EDE-0525-121D-1E764FE1A078" name="detalle_compra_online_PK">
 <createdBy>benja</createdBy>
-<createdTime>2018-05-08 17:35:14 UTC</createdTime>
+<createdTime>2018-05-10 18:11:40 UTC</createdTime>
 <ownerDesignName>bd</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="CFC15382-7348-8EC9-A646-D73958E7AFBF"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="72A090A7-0D39-CD5D-93E6-6DF0B0B972D9" name="detalle_online_pedi_FK">
-<createdBy>benja</createdBy>
-<createdTime>2018-05-08 18:11:02 UTC</createdTime>
-<ownerDesignName>bd</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="F96D4B7F-835C-55E0-4827-E3C5FDE29296"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="D1D17400-AFF3-E0A4-020C-6931A37D1B89" name="depe_producto_precio_FK">
@@ -99,6 +100,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="CBED67C6-516E-ECA7-B0F2-586A29BA5261"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E21D646F-8B29-4A2D-88C9-A34754B1E620" name="de_compra_online_FK">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-10 18:12:12 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6D147D76-DA61-2BEA-88FB-4B3AB13E7B9B"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

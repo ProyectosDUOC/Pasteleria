@@ -88,6 +88,34 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="id_forma_envio" id="396B4E20-23F5-2E4F-F71C-A2A8470E0D95">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-10 17:57:41 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CD318942-B954-A937-AE07-72FD4297722C" referredColumn="7E2CF20F-9E27-17A7-354A-B027D864DCAE"/>
+</associations>
+</Column>
+<Column name="id_sucursal" id="26EC1504-11B4-790D-4DCD-9E804A2960A1">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-10 18:14:25 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5836CAC5-FE90-E64A-305C-CEF2C13AFDB4" referredColumn="63FA9D78-CE56-6F8D-40F7-AAAAD37CC82B"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="AB2B6C3E-6212-2C3C-3542-6F5C0B7F5438" name="pedido_local_PK">
@@ -109,6 +137,26 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="3322DC65-0E10-4251-9ACD-7B4D6DD95D4F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="87481258-1810-14A2-6D26-8524D1C6D9E9" name="pelo_forma_envio_FK">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-10 17:57:41 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="396B4E20-23F5-2E4F-F71C-A2A8470E0D95"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EB68A78A-A582-3791-B862-1A9D45CB3FAD" name="pelo_sucursal_FK">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-10 18:14:25 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="26EC1504-11B4-790D-4DCD-9E804A2960A1"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

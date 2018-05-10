@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CD318942-B954-A937-AE07-72FD4297722C" containerWithKeyObject="FA5BB9F4-0F63-05DF-455E-E6131C6CF233" localFKIndex="87481258-1810-14A2-6D26-8524D1C6D9E9" name="pelo_forma_envio_FK">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-10 17:57:41 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<referredTableLongName>forma_envio</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>22F77720-5860-252A-F84C-1AC14AD40EB5</referredTableID>
+<keyObject>910DF43E-EF67-E769-8933-0C9FCE27B512</keyObject>
+<referredKeyID>910DF43E-EF67-E769-8933-0C9FCE27B512</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_forma_envio</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

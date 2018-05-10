@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9C66D7A1-D0C8-8E39-A0BB-DF8866ED4227" name="pedido_online">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9C66D7A1-D0C8-8E39-A0BB-DF8866ED4227" name="compra_online">
 <createdBy>benja</createdBy>
 <createdTime>2018-05-08 18:08:50 UTC</createdTime>
 <ownerDesignName>bd</ownerDesignName>
@@ -8,10 +8,46 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id_pedido_online" id="51B51CB7-84AC-26FE-F9AD-1D936E3E6813">
+<Column name="id_compra_online" id="51B51CB7-84AC-26FE-F9AD-1D936E3E6813">
 <createdBy>benja</createdBy>
 <createdTime>2018-05-08 18:10:00 UTC</createdTime>
 <ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_cliente" id="6187D578-627C-EC34-2363-8161C2952682">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 19:33:43 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7D2D7B0A-A074-0A2D-ADB9-7A5B6E92A22D" referredColumn="BDA9E63E-93FF-7DE9-F196-BDF938B47E2F"/>
+</associations>
+</Column>
+<Column name="descuento" id="624CE97B-7028-5A88-D3E3-63B28380DDA6">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-10 21:02:14 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="total" id="3DAD0327-3840-D29E-D956-5CBDBC4D712E">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-10 21:02:14 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -29,20 +65,6 @@
 <dataTypeSize>300</dataTypeSize>
 <ownDataTypeParameters>300,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="id_cliente" id="6187D578-627C-EC34-2363-8161C2952682">
-<createdBy>benja</createdBy>
-<createdTime>2018-05-08 19:33:43 UTC</createdTime>
-<ownerDesignName>bd</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="7D2D7B0A-A074-0A2D-ADB9-7A5B6E92A22D" referredColumn="BDA9E63E-93FF-7DE9-F196-BDF938B47E2F"/>
-</associations>
 </Column>
 <Column name="id_forma_envio" id="C8A827A7-BDA0-7A3F-835A-7A8F32C1B3C6">
 <createdBy>benja</createdBy>
@@ -72,11 +94,25 @@
 <colAssociation fkAssociation="01B0BA67-13BB-005D-6B2E-E6F2BFCF4CA2" referredColumn="F35CC93E-8B71-D027-4A03-453CC134DACC"/>
 </associations>
 </Column>
+<Column name="id_sucursal" id="E5C1E24F-2159-039F-44A2-AE6F6F18AD95">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-10 17:55:42 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AC1A1BD1-6A69-9E03-4664-F78E6B3E8F98" referredColumn="63FA9D78-CE56-6F8D-40F7-AAAAD37CC82B"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="14ED6314-B52D-5D66-7A04-73C4D8F40D93" name="pedido_online_PK">
+<ind_PK_UK id="5ADD3583-C634-AD6A-C059-418090C29D65" name="compra_online_PK">
 <createdBy>benja</createdBy>
-<createdTime>2018-05-08 18:10:00 UTC</createdTime>
+<createdTime>2018-05-10 18:11:27 UTC</createdTime>
 <ownerDesignName>bd</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
@@ -113,6 +149,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="3A3DB314-37D7-2CFC-1CDD-E5E124ACB8EA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AD4DD394-647D-2BA7-28FD-4422835A0471" name="peon_sucursal_FK">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-10 17:55:42 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E5C1E24F-2159-039F-44A2-AE6F6F18AD95"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

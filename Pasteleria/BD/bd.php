@@ -13,7 +13,7 @@ class BD{
     // clave de conexión de la Base de Datos
     private $stClave='';
     // Nombre  de la Base de Datos
-    private $stBd='pasteleria';
+    private $stBd='pastel';
     // Constructor de BD
     public function BD()
     {
@@ -34,7 +34,7 @@ class BD{
 		$resultado = $sentencia->execute();
 		// Si el resultado es true ejecuta la sentencia sin problemas
 		if (!$resultado) 
-		    print_r($sentencia->errorInfo());
+            print_r($sentencia->errorInfo());
 		// El hecho que se ejecute
 		// , no significa que existan registros afectados
 		// por lo tanto retornamos la cantidad de registros afectados

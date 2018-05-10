@@ -12,8 +12,9 @@
 <createdBy>benja</createdBy>
 <createdTime>2018-05-08 16:09:05 UTC</createdTime>
 <ownerDesignName>bd</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
@@ -22,9 +23,25 @@
 <createdTime>2018-05-08 16:09:05 UTC</createdTime>
 <ownerDesignName>bd</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="84818B78-4B70-5A4A-9676-79DF00C33DCA" name="sucursal_PK">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-10 17:54:35 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="63FA9D78-CE56-6F8D-40F7-AAAAD37CC82B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
 </Table>

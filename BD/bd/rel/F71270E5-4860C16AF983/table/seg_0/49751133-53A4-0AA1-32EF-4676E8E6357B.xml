@@ -22,7 +22,6 @@
 <createdBy>benja</createdBy>
 <createdTime>2018-05-08 16:03:39 UTC</createdTime>
 <ownerDesignName>bd</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT037</logicalDatatype>
@@ -34,7 +33,6 @@
 <createdBy>benja</createdBy>
 <createdTime>2018-05-08 16:32:57 UTC</createdTime>
 <ownerDesignName>bd</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>

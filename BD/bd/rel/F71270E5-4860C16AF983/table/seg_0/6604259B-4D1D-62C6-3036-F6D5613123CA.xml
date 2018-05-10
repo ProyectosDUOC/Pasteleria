@@ -22,8 +22,9 @@
 <createdBy>benja</createdBy>
 <createdTime>2018-05-08 19:58:52 UTC</createdTime>
 <ownerDesignName>bd</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
@@ -31,18 +32,29 @@
 <createdBy>benja</createdBy>
 <createdTime>2018-05-08 15:44:18 UTC</createdTime>
 <ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="imagen" id="E68C36E0-BBF3-EA0C-5AD9-25707DF29F3D">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-10 18:20:39 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT037</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="activo" id="D93DDB0E-FC7A-306A-3564-745846C79F32">
 <createdBy>benja</createdBy>
 <createdTime>2018-05-08 15:44:18 UTC</createdTime>
 <ownerDesignName>bd</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>

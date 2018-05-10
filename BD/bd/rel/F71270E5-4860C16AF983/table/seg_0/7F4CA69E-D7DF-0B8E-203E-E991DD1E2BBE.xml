@@ -46,6 +46,17 @@
 <colAssociation fkAssociation="FCE4B3D2-49F1-77FE-D18A-7D901B57405C" referredColumn="BF87523E-EF75-3A52-C03B-37E48379C5CC"/>
 </associations>
 </Column>
+<Column name="precio" id="8BA09735-D9AE-3B3B-D6C0-352489E0E4FD">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-10 20:20:55 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="cant" id="27B58D19-E920-DCE7-28BE-B7C3014A75F2">
 <createdBy>benja</createdBy>
 <createdTime>2018-05-08 17:06:56 UTC</createdTime>

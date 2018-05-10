@@ -43,6 +43,45 @@
 <colAssociation fkAssociation="EFF7C64A-E253-DDCA-E9EE-CEABA997C11C" referredColumn="55D88164-66A8-DE7C-368A-A4A51574F3B3"/>
 </associations>
 </Column>
+<Column name="id_forma_pago" id="4F79588B-B305-4B39-E9E0-0919E72AEB64">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-10 21:02:47 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D74527C5-9383-48F2-9AA9-433AD69865BE" referredColumn="F35CC93E-8B71-D027-4A03-453CC134DACC"/>
+</associations>
+</Column>
+<Column name="id_sucursal" id="39698C90-F6A1-F5E4-4B41-F76D7758C444">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-10 18:15:29 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3142413D-CC07-9DC7-FCC3-9EF86D7013B1" referredColumn="63FA9D78-CE56-6F8D-40F7-AAAAD37CC82B"/>
+</associations>
+</Column>
+<Column name="id_pedido_local" id="A51C3D50-F226-B802-3CEE-812168A8218D">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-10 21:08:09 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="C4280757-C4E1-F86E-5E90-109EE6FD5CBE" name="boleta_PK">
@@ -64,6 +103,26 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="7232B47F-CE1D-EEDE-D3A9-68BE603AE016"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="30EC63B8-E1C1-11E1-6467-70ADCA9DDA8E" name="bol_sucl_FK">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-10 18:15:29 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="39698C90-F6A1-F5E4-4B41-F76D7758C444"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="02F34268-D54C-AFF5-338A-3BB0357C2F68" name="bo_pago_FK">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-10 21:02:47 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4F79588B-B305-4B39-E9E0-0919E72AEB64"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

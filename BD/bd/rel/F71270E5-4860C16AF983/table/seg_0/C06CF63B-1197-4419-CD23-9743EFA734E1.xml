@@ -32,6 +32,31 @@
 <colAssociation fkAssociation="A58C9F71-7F47-04FB-4BB3-42D8978022A6" referredColumn="EE928B68-6B21-8E52-64FC-21D6F80D645D"/>
 </associations>
 </Column>
+<Column name="id_producto_p" id="DE52A334-5068-BB24-57B9-9EEBC8FB5479">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-08 21:15:35 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C0099C9F-E6B0-4015-72A3-D23E4564726B" referredColumn="6F479BC4-6299-BAE0-169F-01E53A43B4B6"/>
+</associations>
+</Column>
+<Column name="precio" id="D02E48B8-F678-236C-1E83-C666738B2F4B">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-10 20:21:51 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="cant" id="90DAEAD0-7AB5-6232-DAFE-BA0D2A3A32ED">
 <createdBy>benja</createdBy>
 <createdTime>2018-05-08 17:31:16 UTC</createdTime>
@@ -53,20 +78,6 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="id_producto_p" id="DE52A334-5068-BB24-57B9-9EEBC8FB5479">
-<createdBy>benja</createdBy>
-<createdTime>2018-05-08 21:15:35 UTC</createdTime>
-<ownerDesignName>bd</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="C0099C9F-E6B0-4015-72A3-D23E4564726B" referredColumn="6F479BC4-6299-BAE0-169F-01E53A43B4B6"/>
-</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
