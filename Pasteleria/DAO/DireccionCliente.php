@@ -5,37 +5,58 @@
     //Agregamos desde BD.PHPy la Entitie Actor
     // desde el Path raiz ==> $rootDir
     require_once($rootDir . "/BDD/bd.php");
-    require_once($rootDir . "/modelo/Categoria.php");
+    require_once($rootDir . "/modelo/DetalleBoleta.php");
     class CategoriaDAO {
         // Métodos de nuestra Dao
         // Insert,Update, Delete, Select, Select All
 
-        public static function sqlInsert( $categoria)
+        /*            
+        use pastel;
+
+        CREATE TABLE direcion_cliente (
+            id_direccion  INT NOT NULL AUTO_INCREMENT,
+            id_cliente  INT,
+            nombres    VARCHAR(50),
+            apellidos     VARCHAR(50),
+            informacion VARCHAR(50),
+            code_postal VARCHAR(50),
+            id_comuna  INTEGER,
+            celular  INT,
+            telefono  INT,
+            PRIMARY KEY(id_direccion)
+        ); 
+        */
+        public static function sqlInsert( $dire)
         {
-             $stSql  = "insert into categoria (";
-             $stSql .= " id_cate ,nombre_cate,activo";
+             $stSql  = "insert into direccion_cliente (";
+             $stSql .= " id_cliente,nombres,apellidos,informacion,code_postal,id_comuna,celular,telefono";
              $stSql .= " )values (";
-             $stSql .= " '{$categoria->getIdCategoria()}'"
-                     . ",'{$categoria->getNombreCategoria()}'"
-                     . ",'{$categoria->getActivo()}'"
+             $stSql .= " {$dire->getIdCliente()}"
+                     . ",'{$dire->getNombres()}'"
+                     . ",'{$dire->getApellidos()}'"
+                     . ",'{$dire->getInformacion()}'"
+                     . ",{$dire->getCode()}"
+                     . ",{$dire->getIdComuna()}"
+                     . ",{$dire->getCelular()}",
+                     . ",{$dire->getTelefono()}"
                      . ")";
          return BD::getInstance()->sqlEjecutar($stSql);
         }
-        public static function sqlUpdate( $categoria)
+        public static function sqlUpdate( $dire)
    {
         $stSql =  "update categoria SET ";
-        $stSql .= " id_cate='{$categoria->getIdCategoria()}'"
-                . ",nombre_cate='{$categoria->getNombreCategoria()}'"
-                . ",activo='{$categoria->getActivo()}'"
+        $stSql .= " id_cate='{$dire->getIdCategoria()}'"
+                . ",nombre_cate='{$dire->getNombreCategoria()}'"
+                . ",activo='{$dire->getActivo()}'"
                        ;
-        $stSql .= " Where  id_cate='{$categoria->getIdCategoria()}'"
+        $stSql .= " Where  id_cate='{$dire->getIdCategoria()}'"
                        ;
         return BD::getInstance()->sqlEjecutar($stSql);
    }
-   public static function sqlDelete( $categoria)
+   public static function sqlDelete( $dire)
    {
         $stSql =  "delete from  categoria ";
-        $stSql .= " Where  id_cate='{$categoria->getIdCategoria()}'"
+        $stSql .= " Where  id_cate='{$dire->getIdCategoria()}'"
                           ;
         return BD::getInstance()->sqlEjecutar($stSql);
    }

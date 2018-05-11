@@ -7,17 +7,18 @@
     private $nombres;
     private $apellidos;
     private $informacion;
-    private $zip;
+    private $code;
     private $idComuna;
     private $celular;
     private $telefono;
-    function __construct($idDireccion, $idCliente, $nombres, $apellidos, $informacion, $zip, $idComuna, $celular, $telefono) {
+    
+    function __construct($idDireccion, $idCliente, $nombres, $apellidos, $informacion, $code, $idComuna, $celular, $telefono) {
         $this->idDireccion = $idDireccion;
         $this->idCliente = $idCliente;
         $this->nombres = $nombres;
         $this->apellidos = $apellidos;
         $this->informacion = $informacion;
-        $this->zip = $zip;
+        $this->code = $code;
         $this->idComuna = $idComuna;
         $this->celular = $celular;
         $this->telefono = $telefono;
@@ -42,8 +43,8 @@
         return $this->informacion;
     }
 
-    function getZip() {
-        return $this->zip;
+    function getCode() {
+        return $this->code;
     }
 
     function getIdComuna() {
@@ -78,8 +79,8 @@
         $this->informacion = $informacion;
     }
 
-    function setZip($zip) {
-        $this->zip = $zip;
+    function setCode($code) {
+        $this->code = $code;
     }
 
     function setIdComuna($idComuna) {
