@@ -37,7 +37,7 @@
                      . ",'{$dire->getInformacion()}'"
                      . ",{$dire->getCode()}"
                      . ",{$dire->getIdComuna()}"
-                     . ",{$dire->getCelular()}",
+                     . ",{$dire->getCelular()}"
                      . ",{$dire->getTelefono()}"
                      . ")";
          return BD::getInstance()->sqlEjecutar($stSql);
