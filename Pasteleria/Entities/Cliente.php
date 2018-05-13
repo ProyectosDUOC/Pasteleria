@@ -31,8 +31,6 @@
         }
         
 		public function setNombres($nombres){
-            if($nombres==null || strlen($nombres)>1 && strlen($nombres)<40)
-                throw new Exception ("Error, nombre del empleado no cumple con los requisitos");
 			$this->nombres = $nombres;
         }
 
@@ -84,7 +82,9 @@
 			$this->activo = $activo;
         }
 
-        public function Cliente($idCliente=0, $rut=0, $nombres=null, $apellidos=null, $fechaNacimiento=0, $telefono=0, $correo=null,$idComuna=null, $activo=0){
+        
+
+        public function Cliente($idCliente=0, $rut=0, $nombres=null, $apellidos=null, $fechaNacimiento=0, $telefono=0, $correo=null,$idComuna=0, $activo=0){
 			$this->setIdCliente($idCliente);
             $this->setRut($rut);
             $this->setNombres($nombres);
@@ -114,4 +114,8 @@
             echo $this->__toString();
         }
     }
+
+    $clien= new Cliente();
+    var_dump($clien);
+
 ?>

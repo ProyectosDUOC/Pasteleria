@@ -5,12 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Generar Boleta</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
-    <script src="https://use.fontawesome.com/b48aa89852.js"></script>
-    <link href="../FrWork/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="../FrWork/bootstrap/css/light-bootstrap-dashboard.css?v=2.0.1" rel="stylesheet" />
-    <link href="../FrWork/bootstrap/css/demo.css" rel="stylesheet" />
-    <link href="../FrWork/bootstrap/css/style.css" rel="stylesheet" />
     <?php
         $items = array();
         session_start();
@@ -35,7 +29,6 @@
                 session_destroy();
             }
         }
-
     ?>
 </head>
 <body>
@@ -66,13 +59,13 @@
                 <th>Precio</th>
             </tr>
             <?php
-            foreach ($items as $key => $value) {
-                echo "<tr>";
-                echo "<td>".$value["idprod"]."</td>";
-                echo "<td>".$value["cant"]."</td>";
-                echo "<td>$500</td>";
-                echo "</tr>";
-            }
+                foreach ($items as $item) {
+                    echo "<tr>";
+                    echo "<td>".$item["idprod"]."</td>";
+                    echo "<td>".$item["cant"]."</td>";
+                    echo "<td>$500</td>";
+                    echo "</tr>";
+                }
             ?>
             <tr>
                 <td>Total:</td>
@@ -81,8 +74,6 @@
         </table>
         <input type="submit" name="opcion" value="Pagar">
     </form>
-<?php
-    $_SESSION['items']=$items;
-?>
+    <?php $_SESSION['items']=$items; ?>
 </body>
 </html>

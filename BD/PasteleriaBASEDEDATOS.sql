@@ -105,7 +105,7 @@ CREATE TABLE direccion_cliente (
 
 ALTER TABLE direccion_cliente ADD CONSTRAINT direccion_cliente_pk PRIMARY KEY ( id_direccion );
 
-CREATE TABLE empledo (
+CREATE TABLE empleado (
     id_empleado         INTEGER NOT NULL,
     rut_empleado        VARCHAR(30) NOT NULL,
     nombres             VARCHAR(60) NOT NULL,
@@ -117,7 +117,7 @@ CREATE TABLE empledo (
     activo              INTEGER NOT NULL
 );
 
-ALTER TABLE empledo ADD CONSTRAINT empledo_pk PRIMARY KEY ( id_empleado );
+ALTER TABLE empleado ADD CONSTRAINT empleado_pk PRIMARY KEY ( id_empleado );
 
 CREATE TABLE forma_envio (
     id_forma_envio   INTEGER NOT NULL,
