@@ -22,7 +22,7 @@
         }
 
         public static function sqlUpdate($boleta){
-
+            
         }
 
         public static function sqlDelete($boleta){
