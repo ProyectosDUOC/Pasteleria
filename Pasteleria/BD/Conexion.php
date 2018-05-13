@@ -4,7 +4,7 @@
         private $stHost='localhost';
         private $stUsuario='root'; 
         private $stClave='';
-        private $stBd='pastel';
+        private $stBd='pasteleria';
 
         public function BD()
         {

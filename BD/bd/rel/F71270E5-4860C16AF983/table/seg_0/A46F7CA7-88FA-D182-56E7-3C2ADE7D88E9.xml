@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A46F7CA7-88FA-D182-56E7-3C2ADE7D88E9" name="control_empleado">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-13 02:25:27 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<ordsAlias>table_17</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_control_e" id="89C4499B-F20A-C751-7D28-A04808ADC71E">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-13 02:26:50 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario" id="11EB7EA8-80FE-D5DD-6AC5-28ADDE8D1045">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-13 02:26:50 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="clave" id="CCDFCBE1-882E-33B9-CA87-162089B2D817">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-13 02:26:50 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_tipo" id="19304BC8-C88E-30C6-6EBB-924D6AD09DF9">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-13 02:27:39 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E934E6E1-10BA-97C2-A32A-394F68270395" referredColumn="6A55320F-E1FB-CCF8-E16E-004F81E30F0C"/>
+</associations>
+</Column>
+<Column name="id_empleado" id="D7C62EE1-1805-6461-BA3A-877216BB970C">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-13 02:30:32 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="01F56D62-F2F0-A556-DAE8-94F2F6ECBE85" referredColumn="55D88164-66A8-DE7C-368A-A4A51574F3B3"/>
+</associations>
+</Column>
+<Column name="activo" id="DE96155F-FDA6-55DB-8565-FCEA1F6D747D">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-13 02:30:00 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B4440ED8-FA3A-3141-61B3-A6005AF04B0D" name="control_empleado_PK">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-13 02:30:23 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="89C4499B-F20A-C751-7D28-A04808ADC71E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C2ED6B51-9E40-EE2F-60BE-72591618F5D8" name="conu_tius_FK">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-13 02:27:39 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="19304BC8-C88E-30C6-6EBB-924D6AD09DF9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B0EC907F-A500-CA6B-723F-DD958C5BB745" name="coem_empl_FK">
+<createdBy>benja</createdBy>
+<createdTime>2018-05-13 02:30:32 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D7C62EE1-1805-6461-BA3A-877216BB970C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

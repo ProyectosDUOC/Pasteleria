@@ -1,27 +1,28 @@
 <?php
-//17:09
-    class DireccionCliente{
-        //put your code here
+
+class DireccionCliente {
     private $idDireccion;
-    private $idCliente;
-    private $nombres;
-    private $apellidos;
-    private $informacion;
-    private $code;
-    private $idComuna;
+    private $idCliente;    
+    private $nombres;        
+    private $apellidos;      
+    private $informacion;   
+    private $zip;            
+    private $idComuna;     
+    private $direccion;     
+    private $telefono;       
     private $celular;
-    private $telefono;
     
-    function __construct($idDireccion, $idCliente, $nombres, $apellidos, $informacion, $code, $idComuna, $celular, $telefono) {
+    function __construct($idDireccion, $idCliente, $nombres, $apellidos, $informacion, $zip, $idComuna, $direccion, $telefono, $celular) {
         $this->idDireccion = $idDireccion;
         $this->idCliente = $idCliente;
         $this->nombres = $nombres;
         $this->apellidos = $apellidos;
         $this->informacion = $informacion;
-        $this->code = $code;
+        $this->zip = $zip;
         $this->idComuna = $idComuna;
-        $this->celular = $celular;
+        $this->direccion = $direccion;
         $this->telefono = $telefono;
+        $this->celular = $celular;
     }
     function getIdDireccion() {
         return $this->idDireccion;
@@ -43,20 +44,24 @@
         return $this->informacion;
     }
 
-    function getCode() {
-        return $this->code;
+    function getZip() {
+        return $this->zip;
     }
 
     function getIdComuna() {
         return $this->idComuna;
     }
 
-    function getCelular() {
-        return $this->celular;
+    function getDireccion() {
+        return $this->direccion;
     }
 
     function getTelefono() {
         return $this->telefono;
+    }
+
+    function getCelular() {
+        return $this->celular;
     }
 
     function setIdDireccion($idDireccion) {
@@ -79,37 +84,27 @@
         $this->informacion = $informacion;
     }
 
-    function setCode($code) {
-        $this->code = $code;
+    function setZip($zip) {
+        $this->zip = $zip;
     }
 
     function setIdComuna($idComuna) {
         $this->idComuna = $idComuna;
     }
 
-    function setCelular($celular) {
-        $this->celular = $celular;
+    function setDireccion($direccion) {
+        $this->direccion = $direccion;
     }
 
     function setTelefono($telefono) {
         $this->telefono = $telefono;
     }
 
-
-        public function __toString(){
-            return 
-            "{" . chr(34) . "IdComuna" . chr(34) . ":" . chr(34) . $this->getIdComuna() . chr(34) 
-                . "," . chr(34) . "NombreComuna" . chr(34) . ":" . chr(34) . $this->getNombreComuna() . chr(34) 
-                . "," . chr(34) . "Activo" . chr(34) . ":" . chr(34) . $this->getActivo() . chr(34) 
-            . "}";
-        }   
-
-        public function imprimir(){
-            echo $this->__toString();
-        }
+    function setCelular($celular) {
+        $this->celular = $celular;
     }
 
 
-
+}
 
 ?>

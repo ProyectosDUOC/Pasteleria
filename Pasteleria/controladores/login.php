@@ -1,4 +1,7 @@
 <?php
+    session_start();
+    ?>
+<?php
     $usuario = $_POST['usuario'];
     $pass = $_POST['pass'];
 

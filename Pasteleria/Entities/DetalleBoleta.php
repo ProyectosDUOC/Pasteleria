@@ -1,58 +1,70 @@
 <?php
+
+
 class DetalleBoleta {
-    private $idDetalle;
-    private $idProductoP;
-    private $idBoleta;
-    private $cant;
-    private $total;
+    private $idDetalle;     
+    private $idProductoP;  
+    private $idBoleta;      
+    private $precio;          
+    private $cant;            
+    private $total;  
     
-    public function __construct($idDetalle, $idProductoP, $idBoleta, $cant, $total) {
+    function __construct($idDetalle, $idProductoP, $idBoleta, $precio, $cant, $total) {
         $this->idDetalle = $idDetalle;
         $this->idProductoP = $idProductoP;
         $this->idBoleta = $idBoleta;
+        $this->precio = $precio;
         $this->cant = $cant;
         $this->total = $total;
     }
-    
-    public function getIdDetalle() {
+    function getIdDetalle() {
         return $this->idDetalle;
     }
 
-    public function getIdProductoP() {
+    function getIdProductoP() {
         return $this->idProductoP;
     }
 
-    public function getIdBoleta() {
+    function getIdBoleta() {
         return $this->idBoleta;
     }
 
-    public function getCant() {
+    function getPrecio() {
+        return $this->precio;
+    }
+
+    function getCant() {
         return $this->cant;
     }
 
-    public function getTotal() {
+    function getTotal() {
         return $this->total;
     }
 
-    public function setIdDetalle($idDetalle) {
+    function setIdDetalle($idDetalle) {
         $this->idDetalle = $idDetalle;
     }
 
-    public function setIdProductoP($idProductoP) {
+    function setIdProductoP($idProductoP) {
         $this->idProductoP = $idProductoP;
     }
 
-    public function setIdBoleta($idBoleta) {
+    function setIdBoleta($idBoleta) {
         $this->idBoleta = $idBoleta;
     }
 
-    public function setCant($cant) {
+    function setPrecio($precio) {
+        $this->precio = $precio;
+    }
+
+    function setCant($cant) {
         $this->cant = $cant;
     }
 
-    public function setTotal($total) {
+    function setTotal($total) {
         $this->total = $total;
     }
+
 
 }
 
