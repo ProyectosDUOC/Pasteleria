@@ -1,16 +1,26 @@
 <?php
-
 class CompraOnline {
-    private $idCompraOnline;  
-    private $idCliente;        
-    private $descuento;          
-    private $total;   
-    private $glosa;              
-    private $idFormaEnvio;   
-    private $idFormaPago;     
-    private $idSucursal; 
+    /* CREATE TABLE compra_online (
+    id_compra_online   INTEGER NOT NULL,
+    id_cliente         INTEGER NOT NULL,
+    descuento          INTEGER,
+    total              INTEGER,
+    glosa              VARCHAR(300),
+    id_forma_envio     INTEGER NOT NULL,
+    id_forma_pago      INTEGER NOT NULL,
+    id_sucursal        INTEGER NOT NULL
+    ); */
     
-    function __construct($idCompraOnline, $idCliente, $descuento, $total, $glosa, $idFormaEnvio, $idFormaPago, $idSucursal) {
+    private $idCompraOnline;
+    private $idCliente;
+    private $descuento;
+    private $total;
+    private $glosa;
+    private $idFormaEnvio;
+    private $idFormaPago;
+    private $idSucursal;
+    
+    public function __construct($idCompraOnline, $idCliente, $descuento, $total, $glosa, $idFormaEnvio, $idFormaPago, $idSucursal) {
         $this->idCompraOnline = $idCompraOnline;
         $this->idCliente = $idCliente;
         $this->descuento = $descuento;
@@ -20,71 +30,54 @@ class CompraOnline {
         $this->idFormaPago = $idFormaPago;
         $this->idSucursal = $idSucursal;
     }
-    function getIdCompraOnline() {
+    
+    public function getIdCompraOnline() {
         return $this->idCompraOnline;
     }
-
-    function getIdCliente() {
+    public function getIdCliente() {
         return $this->idCliente;
     }
-
-    function getDescuento() {
+    public function getDescuento() {
         return $this->descuento;
     }
-
-    function getTotal() {
+    public function getTotal() {
         return $this->total;
     }
-
-    function getGlosa() {
+    public function getGlosa() {
         return $this->glosa;
     }
-
-    function getIdFormaEnvio() {
+    public function getIdFormaEnvio() {
         return $this->idFormaEnvio;
     }
-
-    function getIdFormaPago() {
+    public function getIdFormaPago() {
         return $this->idFormaPago;
     }
-
-    function getIdSucursal() {
+    public function getIdSucursal() {
         return $this->idSucursal;
     }
 
-    function setIdCompraOnline($idCompraOnline) {
+    public function setIdCompraOnline($idCompraOnline) {
         $this->idCompraOnline = $idCompraOnline;
     }
-
-    function setIdCliente($idCliente) {
+    public function setIdCliente($idCliente) {
         $this->idCliente = $idCliente;
     }
-
-    function setDescuento($descuento) {
+    public function setDescuento($descuento) {
         $this->descuento = $descuento;
     }
-
-    function setTotal($total) {
+    public function setTotal($total) {
         $this->total = $total;
     }
-
-    function setGlosa($glosa) {
+    public function setGlosa($glosa) {
         $this->glosa = $glosa;
     }
-
-    function setIdFormaEnvio($idFormaEnvio) {
+    public function setIdFormaEnvio($idFormaEnvio) {
         $this->idFormaEnvio = $idFormaEnvio;
     }
-
-    function setIdFormaPago($idFormaPago) {
+    public function setIdFormaPago($idFormaPago) {
         $this->idFormaPago = $idFormaPago;
     }
-
-    function setIdSucursal($idSucursal) {
+    public function setIdSucursal($idSucursal) {
         $this->idSucursal = $idSucursal;
-    }
-
-
+    }    
 }
-
-?>

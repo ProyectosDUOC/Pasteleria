@@ -1,15 +1,23 @@
 <?php
 
-
 class DetalleBoleta {
-    private $idDetalle;     
-    private $idProductoP;  
-    private $idBoleta;      
-    private $precio;          
-    private $cant;            
-    private $total;  
+    /* CREATE TABLE detalle_boleta (
+    id_detalle      INTEGER NOT NULL,
+    id_producto_p   INTEGER NOT NULL,
+    id_boleta       INTEGER NOT NULL,
+    precio          INTEGER,
+    cant            INTEGER,
+    total           INTEGER
+    );     */
     
-    function __construct($idDetalle, $idProductoP, $idBoleta, $precio, $cant, $total) {
+    private $idDetalle;
+    private $idProductoP;
+    private $idBoleta;
+    private $precio;
+    private $cant;
+    private $total;
+    
+    public function __construct($idDetalle, $idProductoP, $idBoleta, $precio, $cant, $total) {
         $this->idDetalle = $idDetalle;
         $this->idProductoP = $idProductoP;
         $this->idBoleta = $idBoleta;
@@ -20,52 +28,37 @@ class DetalleBoleta {
     function getIdDetalle() {
         return $this->idDetalle;
     }
-
-    function getIdProductoP() {
+    public function getIdProductoP() {
         return $this->idProductoP;
     }
-
-    function getIdBoleta() {
+    public function getIdBoleta() {
         return $this->idBoleta;
     }
-
-    function getPrecio() {
+    public function getPrecio() {
         return $this->precio;
     }
-
-    function getCant() {
+    public function getCant() {
         return $this->cant;
     }
-
-    function getTotal() {
+    public function getTotal() {
         return $this->total;
     }
-
     function setIdDetalle($idDetalle) {
         $this->idDetalle = $idDetalle;
     }
-
-    function setIdProductoP($idProductoP) {
+    public function setIdProductoP($idProductoP) {
         $this->idProductoP = $idProductoP;
     }
-
-    function setIdBoleta($idBoleta) {
+    public function setIdBoleta($idBoleta) {
         $this->idBoleta = $idBoleta;
     }
-
-    function setPrecio($precio) {
+    public function setPrecio($precio) {
         $this->precio = $precio;
     }
-
-    function setCant($cant) {
+    public function setCant($cant) {
         $this->cant = $cant;
     }
-
-    function setTotal($total) {
+    public function setTotal($total) {
         $this->total = $total;
     }
-
-
 }
-
-?>

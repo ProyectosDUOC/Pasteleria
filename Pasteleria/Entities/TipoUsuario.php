@@ -24,9 +24,5 @@ class TipoUsuario {
    function setNombreTipo($nombreTipo) {
        $this->nombreTipo = $nombreTipo;
    }
-
-
 }
-
-
 ?>

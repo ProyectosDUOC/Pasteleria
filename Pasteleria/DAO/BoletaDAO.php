@@ -6,7 +6,7 @@ if (!isset($rootDir))
     $rootDir = $_SERVER['DOCUMENT_ROOT'];
 //Agregamos desde BD.PHPy la Entitie Boleta
 // desde el Path raiz ==> $rootDir
-require_once($rootDir . "/BD/BD.php");
+require_once($rootDir . "/BD/bd.php");
 require_once($rootDir . "/Entities/Boleta.php");
 
 class BoletaDAO {

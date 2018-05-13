@@ -128,8 +128,13 @@ CREATE TABLE direccion_cliente (
 
 -- ALTER TABLE direccion_cliente ADD CONSTRAINT direccion_cliente_pk PRIMARY KEY ( id_direccion );
 
+<<<<<<< HEAD
 CREATE TABLE empledo (
     id_empleado         INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+=======
+CREATE TABLE empleado (
+    id_empleado         INTEGER NOT NULL,
+>>>>>>> 7b1c33b5b5cd4a1c7bf21e492454f6f11760bd51
     rut_empleado        VARCHAR(30) NOT NULL,
     nombres             VARCHAR(60) NOT NULL,
     apellidos           VARCHAR(30) NOT NULL,
@@ -140,7 +145,11 @@ CREATE TABLE empledo (
     activo              INTEGER NOT NULL
 );
 
+<<<<<<< HEAD
 -- ALTER TABLE empledo ADD CONSTRAINT empledo_pk PRIMARY KEY ( id_empleado );
+=======
+ALTER TABLE empleado ADD CONSTRAINT empleado_pk PRIMARY KEY ( id_empleado );
+>>>>>>> 7b1c33b5b5cd4a1c7bf21e492454f6f11760bd51
 
 CREATE TABLE forma_envio (
     id_forma_envio   INTEGER NOT NULL,

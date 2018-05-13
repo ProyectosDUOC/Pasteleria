@@ -1,11 +1,16 @@
 <?php
-
 class Categoria {
-    private $idCate;      
-    private $nombreCate;   
-    private $activo; 
+    /*CREATE TABLE categoria (
+    id_cate       INTEGER NOT NULL,
+    nombre_cate   VARCHAR(40) NOT NULL,
+    activo        INTEGER NOT NULL
+    );   */
     
-    function __construct($idCate, $nombreCate, $activo) {
+    private $idCate;
+    private $nombreCate;
+    private $activo;
+    
+    public function __construct($idCate, $nombreCate, $activo) {
         $this->idCate = $idCate;
         $this->nombreCate = $nombreCate;
         $this->activo = $activo;
@@ -33,7 +38,6 @@ class Categoria {
     function setActivo($activo) {
         $this->activo = $activo;
     }
-
 
 }
 
