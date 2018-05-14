@@ -44,18 +44,6 @@ class Boleta {
         return $this->idPedidoLocal;
     }
 
-    function getIdFormaPago() {
-        return $this->idFormaPago;
-    }
-
-    function getIdSucursal() {
-        return $this->idSucursal;
-    }
-
-    function getIdPedidoLocal() {
-        return $this->idPedidoLocal;
-    }
-
     function setIdBoleta($idBoleta) {
         $this->idBoleta = $idBoleta;
     }
