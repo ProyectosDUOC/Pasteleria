@@ -1,10 +1,4 @@
 <?php
-<<<<<<< HEAD
-
-class PedidoLocal {
-    private $idPedidoLocal;  
-    private $idCliente;       
-=======
 class PedidoLocal {
     /* CREATE TABLE pedido_local (
     id_pedido_local   INTEGER NOT NULL,
@@ -20,23 +14,15 @@ class PedidoLocal {
      
     private $idPedidoLocal;
     private $idCliente;
->>>>>>> 7b1c33b5b5cd4a1c7bf21e492454f6f11760bd51
     private $glosa;
     private $descuento;
     private $total;
     private $fechaTermino;
     private $fechaInscrita;
-<<<<<<< HEAD
-    private $idFormaEnvio;   
-    private $idSucursal; 
-    
-    function __construct($idPedidoLocal, $idCliente, $glosa, $descuento, $total, $fechaTermino, $fechaInscrita, $idFormaEnvio, $idSucursal) {
-=======
     private $idFormaEnvio;
     private $idSucursal;
     
     public function __construct($idPedidoLocal, $idCliente, $glosa, $descuento, $total, $fechaTermino, $fechaInscrita, $idFormaEnvio, $idSucursal) {
->>>>>>> 7b1c33b5b5cd4a1c7bf21e492454f6f11760bd51
         $this->idPedidoLocal = $idPedidoLocal;
         $this->idCliente = $idCliente;
         $this->glosa = $glosa;
@@ -47,85 +33,6 @@ class PedidoLocal {
         $this->idFormaEnvio = $idFormaEnvio;
         $this->idSucursal = $idSucursal;
     }
-<<<<<<< HEAD
-
-    function getIdPedidoLocal() {
-        return $this->idPedidoLocal;
-    }
-
-    function getIdCliente() {
-        return $this->idCliente;
-    }
-
-    function getGlosa() {
-        return $this->glosa;
-    }
-
-    function getDescuento() {
-        return $this->descuento;
-    }
-
-    function getTotal() {
-        return $this->total;
-    }
-
-    function getFechaTermino() {
-        return $this->fechaTermino;
-    }
-
-    function getFechaInscrita() {
-        return $this->fechaInscrita;
-    }
-
-    function getIdFormaEnvio() {
-        return $this->idFormaEnvio;
-    }
-
-    function getIdSucursal() {
-        return $this->idSucursal;
-    }
-
-    function setIdPedidoLocal($idPedidoLocal) {
-        $this->idPedidoLocal = $idPedidoLocal;
-    }
-
-    function setIdCliente($idCliente) {
-        $this->idCliente = $idCliente;
-    }
-
-    function setGlosa($glosa) {
-        $this->glosa = $glosa;
-    }
-
-    function setDescuento($descuento) {
-        $this->descuento = $descuento;
-    }
-
-    function setTotal($total) {
-        $this->total = $total;
-    }
-
-    function setFechaTermino($fechaTermino) {
-        $this->fechaTermino = $fechaTermino;
-    }
-
-    function setFechaInscrita($fechaInscrita) {
-        $this->fechaInscrita = $fechaInscrita;
-    }
-
-    function setIdFormaEnvio($idFormaEnvio) {
-        $this->idFormaEnvio = $idFormaEnvio;
-    }
-
-    function setIdSucursal($idSucursal) {
-        $this->idSucursal = $idSucursal;
-    }
-
-
-}
-
-?>
-=======
     
     public function getIdPedidoLocal() {
         return $this->idPedidoLocal;
@@ -199,4 +106,3 @@ class PedidoLocal {
         $this->idSucursal = $idSucursal;
     }    
 }
->>>>>>> 7b1c33b5b5cd4a1c7bf21e492454f6f11760bd51
