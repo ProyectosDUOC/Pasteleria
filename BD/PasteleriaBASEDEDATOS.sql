@@ -128,13 +128,9 @@ CREATE TABLE direccion_cliente (
 
 -- ALTER TABLE direccion_cliente ADD CONSTRAINT direccion_cliente_pk PRIMARY KEY ( id_direccion );
 
-<<<<<<< HEAD
-CREATE TABLE empledo (
-    id_empleado         INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
-=======
+
 CREATE TABLE empleado (
-    id_empleado         INTEGER NOT NULL,
->>>>>>> 7b1c33b5b5cd4a1c7bf21e492454f6f11760bd51
+    id_empleado         INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
     rut_empleado        VARCHAR(30) NOT NULL,
     nombres             VARCHAR(60) NOT NULL,
     apellidos           VARCHAR(30) NOT NULL,
@@ -145,11 +141,8 @@ CREATE TABLE empleado (
     activo              INTEGER NOT NULL
 );
 
-<<<<<<< HEAD
--- ALTER TABLE empledo ADD CONSTRAINT empledo_pk PRIMARY KEY ( id_empleado );
-=======
-ALTER TABLE empleado ADD CONSTRAINT empleado_pk PRIMARY KEY ( id_empleado );
->>>>>>> 7b1c33b5b5cd4a1c7bf21e492454f6f11760bd51
+
+-- ALTER TABLE empleado ADD CONSTRAINT empleado_pk PRIMARY KEY ( id_empleado );
 
 CREATE TABLE forma_envio (
     id_forma_envio   INTEGER NOT NULL,
@@ -194,7 +187,7 @@ CREATE TABLE producto_precio (
     id_producto_p   INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
     id_producto     INTEGER NOT NULL,
     descripcion     VARCHAR(40) NOT NULL,
-    precio          INTEGER NOT NULL
+    precioproducto_precio          INTEGER NOT NULL
 );
 
 -- ALTER TABLE producto_precio ADD CONSTRAINT producto_precio_pk PRIMARY KEY ( id_producto_p );
@@ -223,7 +216,7 @@ ALTER TABLE boleta
 
 ALTER TABLE boleta
     ADD CONSTRAINT bole_emple_fk FOREIGN KEY ( id_empleado )
-        REFERENCES empledo ( id_empleado );
+        REFERENCES empleado ( id_empleado );
 
 ALTER TABLE cliente
     ADD CONSTRAINT cliente_comuna_fk FOREIGN KEY ( id_comuna )
@@ -235,7 +228,7 @@ ALTER TABLE control_cliente
 
 ALTER TABLE control_empleado
     ADD CONSTRAINT coem_empl_fk FOREIGN KEY ( id_empleado )
-        REFERENCES empledo ( id_empleado );
+        REFERENCES empleado ( id_empleado );
 
 ALTER TABLE control_empleado
     ADD CONSTRAINT conu_tius_fk FOREIGN KEY ( id_tipo )
@@ -273,7 +266,7 @@ ALTER TABLE direccion_cliente
     ADD CONSTRAINT direccion_cliente_comuna_fk FOREIGN KEY ( id_comuna )
         REFERENCES comuna ( id_comuna );
 
-ALTER TABLE empledo
+ALTER TABLE empleado
     ADD CONSTRAINT empl_comu_fk FOREIGN KEY ( id_comuna )
         REFERENCES comuna ( id_comuna );
 
@@ -379,11 +372,11 @@ INSERT INTO Comuna VALUES (50,'Isla de Maipo');
 INSERT INTO Comuna VALUES (51,'El Monte');
 INSERT INTO Comuna VALUES (52,'Padre Hurtado');
 
-INSERT INTO empledo(rut_empleado,nombres,apellidos,fecha_nacimiento,telefono,id_comuna,correo,activo) VALUES('11','Benjamin','Mora','2018-06-30',9999,1,'benja@gmail.com',1);
+INSERT INTO empleado(rut_empleado,nombres,apellidos,fecha_nacimiento,telefono,id_comuna,correo,activo) VALUES('11','Benjamin','Mora','2018-06-30',9999,1,'benja@gmail.com',1);
 INSERT INTO control_empleado(usuario,clave,id_tipo,id_empleado,activo) VALUES('benjamin','benjamin',1,1,1);
 
-INSERT INTO empledo(rut_empleado,nombres,apellidos,fecha_nacimiento,telefono,id_comuna,correo,activo) VALUES('12','Sebastian','orrego','2018-06-30',9999,3,'Seba@gmail.com',1);
+INSERT INTO empleado(rut_empleado,nombres,apellidos,fecha_nacimiento,telefono,id_comuna,correo,activo) VALUES('12','Sebastian','orrego','2018-06-30',9999,3,'Seba@gmail.com',1);
 INSERT INTO control_empleado(usuario,clave,id_tipo,id_empleado,activo) VALUES('sebastian','sebastian',3,2,1);
 
-INSERT INTO empledo(rut_empleado,nombres,apellidos,fecha_nacimiento,telefono,id_comuna,correo,activo) VALUES('13','Patricia','Campos','2018-06-30',9999,3,'pati@gmail.com',1);
+INSERT INTO empleado(rut_empleado,nombres,apellidos,fecha_nacimiento,telefono,id_comuna,correo,activo) VALUES('13','Patricia','Campos','2018-06-30',9999,3,'pati@gmail.com',1);
 INSERT INTO control_empleado(usuario,clave,id_tipo,id_empleado,activo) VALUES('patricia','patricia',3,3,1);

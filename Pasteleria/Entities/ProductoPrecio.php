@@ -13,7 +13,7 @@ class ProductoPrecio {
     private $descripcion;
     private $precio;
     
-    public function __construct($idProductoP, $idProducto, $descripcion, $precio) {
+    public function __construct($idProductoP, $idProducto=0, $descripcion=null, $precio=0) {
         $this->idProductoP = $idProductoP;
         $this->idProducto = $idProducto;
         $this->descripcion = $descripcion;
@@ -51,6 +51,9 @@ class ProductoPrecio {
         $this->precio = $precio;
     }
 
+    public function __toString() {
+        return "ProdPrecio=".$this->idProductoP.",".$this->descripcion.",".$this->precio;
+    }
 
 }
 

@@ -9,37 +9,37 @@ if (!isset($rootDir))
 require_once($rootDir . "/BD/bd.php");
 require_once($rootDir . "/Entities/Boleta.php");
 
-class BoletaDAO {
+class DetalleBoletaDAO {
 
     //insert
-    public static function sqlInsert($boleta) {
-        $stSql = "insert into boleta (";
-        $stSql .= " total,id_empleado,id_forma_pago,id_sucursal,id_pedido_local";
+    public static function sqlInsert($detalleBoleta) {
+        $stSql = "insert into detalle_boleta (";
+        $stSql .= " id_detalle,id_producto_p,id_boleta,precio,cant,total";
         $stSql .= " )values (";
-        $stSql .= " {$boleta->getTotal()}"
-                . ",{$boleta->getIdEmpleado()}"
-                . ",{$boleta->getIdFormaPago()}"
-                . ",{$boleta->getIdSucursal()}"
-                . ",{$boleta->getIdPedidoLocal()}"
+        $stSql .= " {$detalleBoleta->getIdProductoP()}"
+                . ",{$detalleBoleta->getIdBoleta()}"
+                . ",{$detalleBoleta->getPrecio()}"
+                . ",{$detalleBoleta->getCant()}"
+                . ",{$detalleBoleta->getTotal()}"
                 . ")";
         return BD::getInstance()->sqlInsertar($stSql);
     }
 
-    public static function sqlUpdate($boleta) {
-        $stSql = "update boleta SET ";
-        $stSql .= " total={$boleta->getTotal()}"
-                . ",id_empleado={$boleta->getIdEmpleado()}"
-                . ",id_forma_pago={$boleta->getIdFormaPago()}"
-                . ",id_sucursal={$boleta->getIdSucursal()}"
-                . ",id_pedido_local={$boleta->getIdPedidoLocal()}";
-        $stSql .= " Where  id_boleta={$boleta->getIdBoleta()}"
-        ;
+    public static function sqlUpdate($detalleBoleta) {
+        $stSql = "update detalle_boleta SET ";
+        $stSql .= " id_detalle={$detalleBoleta->getTotal()}"
+                . ",id_producto_p={$detalleBoleta->getIdEmpleado()}"
+                . ",id_boleta={$detalleBoleta->getIdFormaPago()}"
+                . ",precio={$detalleBoleta->getIdSucursal()}"
+                . ",cant={$detalleBoleta->getIdPedidoLocal()}"
+                . ",total={$detalleBoleta->getTotal()}";
+        $stSql .= " Where  id_boleta={$detalleBoleta->getIdBoleta()}";
         return BD::getInstance()->sqlEjecutar($stSql);
     }
 
-    public static function sqlDelete($boleta) {
-        $stSql = "delete from  boleta ";
-        $stSql .= " Where  id_boleta={$boleta->getIdBoleta()}";
+    public static function sqlDelete($detalleBoleta) {
+        $stSql = "delete from  detalle_boleta ";
+        $stSql .= " Where  id_detalle_boleta={$detalleBoleta->getIdBoleta()}";
         return BD::getInstance()->sqlEjecutar($stSql);
     }
 
@@ -47,9 +47,9 @@ class BoletaDAO {
 
     // Método que ejecuta una sentencia,
     // Sin embargo no retorna ningún registro
-    public static function sqlSelect($boleta) {
-        $stSql = "select *  from  boleta ";
-        $stSql .= " Where  id_boleta={$boleta->geIdBoleta()}"
+    public static function sqlSelect($detalleBoleta) {
+        $stSql = "select *  from  detalle_boleta ";
+        $stSql .= " Where  id_detalle_boleta={$detalleBoleta->geIdBoleta()}"
         ;
         $resultado = BD::getInstance()->sqlSelect($stSql);
         if (!$resultado)
@@ -61,49 +61,49 @@ class BoletaDAO {
     // De acuerdo a la sentencia sql ejecutada por sqlSelect
     // crea una instancia de boletay la devuelve
     // Observe que no recibe parámetro, ya que retorna un boleta
-    public static function sqlFetch() {
+    /*public static function sqlFetch() {
         // Retorna un registro
         $fila = BD::getInstance()->sqlFetch();
         // Si fila esta vacia,no hay registro devuelve null
         if (!$fila)
             return null;
         // Llena los valores que faltan a la instancia
-        // entregada por parámetro $boleta
-        $boletaAux = new Boleta($fila["id_boleta"]
+        // entregada por parámetro $detalleBoleta
+        $detalleBoletaAux = new Boleta($fila["id_boleta"]
                 , $fila["total"]
                 , $fila["id_empleado"]
                 , $fila["id_forma_pago"]
                 , $fila["id_sucursal"]
                 , $fila["id_pedido_local"]);
-        return $boletaAux;
+        return $detalleBoletaAux;
     }
 
     // Método que busca el siguiente registro disponible
     // De acuerdo a la sentencia sql ejecutada por sqlSelect
     // y llena la instancia pasada por parámetro
-    public static function sqlFetchBoleta($boleta) {
+    public static function sqlFetchBoleta($detalleBoleta) {
         // Retorna un registro
         $fila = BD::getInstance()->sqlFetch();
         // Si fila esta vacia,no hay registro devuelve false
         if (!$fila)
             return false;
         // Llena los valores que faltan a la instancia
-        // entregada por parámetro $boleta
-        $boleta->setIdBoleta($fila["id_boleta"]);
-        $boleta->setTotal($fila["total"]);
-        $boleta->setIdEmpleado($fila["id_empleado"]);
-        $boleta->setIdFormaPago($fila["id_forma_pago"]);
-        $boleta->setIdSucursal($fila["id_sucursal"]);
-        $boleta->setIdPedidoLocal($fila["id_pedido_local"]);
+        // entregada por parámetro $detalleBoleta
+        $detalleBoleta->setIdBoleta($fila["id_boleta"]);
+        $detalleBoleta->setTotal($fila["total"]);
+        $detalleBoleta->setIdEmpleado($fila["id_empleado"]);
+        $detalleBoleta->setIdFormaPago($fila["id_forma_pago"]);
+        $detalleBoleta->setIdSucursal($fila["id_sucursal"]);
+        $detalleBoleta->setIdPedidoLocal($fila["id_pedido_local"]);
         return true;
     }
 
     // Recibe como parámetro un id,no una clase
     // retornará un objeto deltipo boleta
-    public static function sqlSelectOne($boletaId) {
+    public static function sqlSelectOne($detalleBoletaId) {
         // creaa la sentencia sql para el select
         $stSql = "select *  from boleta ";
-        $stSql .= " Where  id_boleta=$boletaId"
+        $stSql .= " Where  id_boleta=$detalleBoletaId"
         ;
         // Ejecuta el Select
         $resultado = BD::getInstance()->sqlSelect($stSql);
@@ -116,23 +116,23 @@ class BoletaDAO {
 
         // crea una instancia de boleta
         // con los valores retornados de la BD
-        $boletaAux = new Boleta($fila["id_boleta"]
+        $detalleBoletaAux = new Boleta($fila["id_boleta"]
                 , $fila["total"]
                 , $fila["id_empleado"]
                 , $fila["id_forma_pago"]
                 , $fila["id_sucursal"]
                 , $fila["id_pedido_local"]);
         // Retorna el Objeto creado boletaAux
-        return $boletaAux;
+        return $detalleBoletaAux;
     }
 
     // Recibe como parámetro una instancia, solocon los valores
     // de la PK, en este caso boleta_id
     // retornará un true o false, dependiendo si existe registro
-    public static function sqlSelectOneBoleta($boleta) {
+    public static function sqlSelectOneBoleta($detalleBoleta) {
         // Crea el Sql utilizando el boletaId de la clase
         $stSql = "select *  from  boleta ";
-        $stSql .= " Where  id_boleta={$boleta->getBoletaId()}";
+        $stSql .= " Where  id_boleta={$detalleBoleta->getBoletaId()}";
 
         // Lee el registro
         $resultado = BD::getInstance()->sqlSelect($stSql);
@@ -144,12 +144,12 @@ class BoletaDAO {
         if (!$fila)
             return null;
         // llena los campos que faltan de la instancia        
-        $boleta->setIdBoleta($fila["id_boleta"]);
-        $boleta->setTotal($fila["total"]);
-        $boleta->setIdEmpleado($fila["id_empleado"]);
-        $boleta->setIdFormaPago($fila["id_forma_pago"]);
-        $boleta->setIdSucursal($fila["id_sucursal"]);
-        $boleta->setIdPedidoLocal($fila["id_pedido_local"]);
+        $detalleBoleta->setIdBoleta($fila["id_boleta"]);
+        $detalleBoleta->setTotal($fila["total"]);
+        $detalleBoleta->setIdEmpleado($fila["id_empleado"]);
+        $detalleBoleta->setIdFormaPago($fila["id_forma_pago"]);
+        $detalleBoleta->setIdSucursal($fila["id_sucursal"]);
+        $detalleBoleta->setIdPedidoLocal($fila["id_pedido_local"]);
         // retorna true, ya que resulto la operación
         return true;
     }
@@ -174,10 +174,6 @@ class BoletaDAO {
         }
         // Retornamos el Arreglo $pila Lleno
         return $pila;
-    }
-    
-    
-
+    }*/
 }
-
 ?>
